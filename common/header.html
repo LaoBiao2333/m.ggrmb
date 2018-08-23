@@ -1,0 +1,129 @@
+<div class="header-box">
+    <div class="header">
+        <div class="content clearfix">
+            <div class="header-box">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <a href="javascript:;" class="a-menu"></a>
+                <div class="menu menu-content" :class="{active:menuId}">
+                    <a href="javascript:;" class="a-register">注册
+                        <i></i>
+                    </a>
+                    <ul class="menu-ul">
+                        <li class="on">
+                            <a href="javascript:;" class="fir-a">首页</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="fir-a">关于金盛
+                                <i></i>
+                            </a>
+                            <div class="sec-menu">
+                                <span>
+                                    <a href="#/about/introduce">品牌介绍
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/about/protocol">协议声明
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/about/notice">网站公告
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/about/invest">投资保障
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="fir-a">研究中心
+                                <i></i>
+                            </a>
+                            <div class="sec-menu">
+                                <span>
+                                    <a href="#/research/news1">行情分析
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/research/news2">实盘策略
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/research/news3">金银课堂
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/research/news4">市场动态
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="fir-a">交易规则
+                                <i></i>
+                            </a>
+                            <div class="sec-menu">
+                                <span>
+                                    <a href="#/product/introduce">产品介绍
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/product/rule">金银规则
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/product/term">交易术语
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="fir-a">平台下载
+                                <i></i>
+                            </a>
+                            <div class="sec-menu">
+                                <span>
+                                    <a href="#/download">真实开户
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/download">模拟开户
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#/download">软件下载
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="fir-a">代理申请
+                                <!---->
+                            </a>
+                            <!---->
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu menu-bg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".header .a-menu").click(function () {
+        $(".header .menu").addClass("active");
+    })
+    $(".menu-content .a-register i").click(function () {
+        $(".header .menu").removeClass("active");
+    })
+    $(".menu-content .menu-ul li").click(function () {
+        if ($(this).hasClass("on")) {
+            $(".menu-content .menu-ul li").removeClass("on");
+        } else {
+            $(".menu-content .menu-ul li").removeClass("on");
+            $(this).addClass("on");
+        }
+    })
+</script>

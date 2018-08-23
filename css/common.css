@@ -1,0 +1,362 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+div,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 14px;
+    font-family: "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:link,
+a:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
+
+em {
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    outline: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    /* margin-top: 1.6rem; */
+    width: 100%;
+    overflow: hidden;
+}
+
+/*******************************************************************
+* header
+********************************************************************/
+
+.header {
+    width: 100%;
+    height: 1.26rem;
+    line-height: 1.26rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 0.06rem solid #e98024;
+    background-color: #2a3052;
+}
+
+.header .header-box {
+    height: 1.26rem;
+}
+
+.header .header-box .logo {
+    width: 3.27rem;
+    height: 0.62rem;
+    margin: 0.32rem;
+    float: left;
+}
+
+.header .header-box .logo img {
+    width: 100%;
+    display: block;
+}
+
+.header .header-box a.a-menu {
+    width: 0.4rem;
+    height: 0.34rem;
+    float: right;
+    display: block;
+    color: #fff;
+    background: url(../images/common_icon.png) 0 0 no-repeat;
+    background-size: 2.83rem 1.14rem;
+    margin: 0.46rem 0.6rem;
+}
+
+.header .header-box .menu-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5.5rem;
+    height: 100%;
+    overflow: hidden;
+    z-index: 101;
+    background-color: #161c40;
+    transform: translateX(100%);
+    transition: all 0.3s;
+}
+
+.header .header-box .menu-content a.a-register {
+    height: 1.3rem;
+    display: block;
+    line-height: 1.3rem;
+    font-size: 0.3rem;
+    color: #fff;
+    border-bottom: 0.02rem solid #666;
+    padding: 0 0.3rem 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.header .header-box .menu-content a.a-register i {
+    width: 0.28rem;
+    height: 0.28rem;
+    display: block;
+    float: right;
+    background: url(../images/common_icon.png) -0.68rem -0.03rem no-repeat;
+    background-size: 2.83rem 1.14rem;
+    margin-top: 0.5rem;
+}
+
+.header .header-box .menu-content ul {
+    height: 90%;
+    overflow: scroll;
+}
+
+.header .header-box .menu-content ul li {
+    line-height: 1.26rem;
+    display: block;
+}
+
+.header .header-box .menu-content ul li a.fir-a {
+    color: #fff;
+    height: 1.26rem;
+    line-height: 1.26rem;
+    font-size: 0.3rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header .header-box .menu-content ul li a.fir-a i {
+    width: 0.17rem;
+    height: 0.32rem;
+    display: inline-block;
+    margin-top: 0.445rem;
+    background: url(../images/common_icon.png) -1.97rem -0.01rem no-repeat;
+    background-size: 2.83rem 1.14rem;
+    transition: all 0.3s;
+}
+
+.header .header-box .menu-content ul li .sec-menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #2a3052;
+    transition: all 0.5s;
+}
+
+.header .header-box .menu-content ul li .sec-menu span {
+    display: block;
+}
+
+.header .header-box .menu-content ul li .sec-menu span a {
+    display: block;
+    font-size: 0.3rem;
+    line-height: 1.26rem;
+    cursor: pointer;
+    color: #fff;
+    padding-left: 0.5rem;
+}
+
+.header .header-box .menu-content ul li.on a.fir-a i {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.header .header-box .menu-content ul li.on .sec-menu {
+    max-height: 6.3rem;
+}
+
+.header .header-box .menu-content.active {
+    transform: translateX(0);
+}
+
+.header .header-box .menu-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header .header-box .menu-bg.active {
+    display: block;
+}
+
+/*******************************************************************
+* footer
+********************************************************************/
+
+.footer {
+    padding: 0.5rem 0 0.7rem;
+    margin-bottom: 0.98rem;
+    background-color: #2a3052;
+    text-align: center;
+}
+
+.footer .logo-span {
+    width: 3.33rem;
+    height: 0.62rem;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto 0.36rem;
+}
+
+.footer .logo-span img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.footer p {
+    font-size: 0.26rem;
+    color: #919191;
+    line-height: 0.48rem;
+}
+
+.footer-fix {
+    width: 100%;
+    height: 0.98rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #2a3052;
+    padding: 0.3rem 0 0.34rem;
+    box-sizing: border-box;
+    border-top: 0.01rem solid #535c8c;
+}
+
+.footer-fix ul {
+    font-size: 0;
+}
+
+.footer-fix ul li {
+    width: 49.9%;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-fix ul li a {
+    font-size: 0.3rem;
+    line-height: 0.36rem;
+    color: #fff;
+}
+
+.footer-fix ul li a i {
+    width: 0.48rem;
+    height: 0.44rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.22rem;
+    background: url(../images/common_icon.png) 0 -0.69rem no-repeat;
+    background-size: 2.83rem 1.14rem;
+}
+
+.footer-fix ul .li-2 {
+    border-left: 0.01rem solid #535c8c;
+}
+
+.footer-fix ul .li-2 a i {
+    background-position-x: -0.69rem;
+}
