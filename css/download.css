@@ -1,0 +1,435 @@
+.download {
+    line-height: 1;
+    text-align: center;
+}
+
+.download .banner {
+    padding-top: 0.54rem;
+    background: url(../images/download/banner_bg.jpg) no-repeat top;
+    background-size: cover;
+}
+
+.download .banner .title-span {
+    width: 3.63rem;
+    height: 0.67rem;
+    display: block;
+    margin: 0 auto 0.42rem;
+    background: url(../images/download/mt4logo.png) no-repeat center;
+    background-size: contain;
+}
+
+.download .banner .banner-content {
+    width: 6.6rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.download .banner .banner-content p {
+    text-align: justify;
+    color: #666;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+}
+
+.download .banner .banner-content p a {
+    color: #e98024;
+    float: right;
+    display: inline-block;
+}
+
+.download .banner .banner-content a {
+    display: none;
+}
+
+.download .banner .showP {
+    position: relative;
+    height: 1.66rem;
+}
+
+.download .banner .showP p {
+    height: 0;
+    overflow: hidden;
+}
+
+.download .banner .showP p a {
+    display: none;
+}
+
+.download .banner .showP p:before {
+    content: attr(data-content);
+    height: 1.06rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/download/banner_bg.jpg) no-repeat top;
+    background-size: 7.5rem 12.56rem;
+    z-index: 2;
+}
+
+.download .banner .showP p:after {
+    content: attr(data-content);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    padding-right: 1.4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: -2.1rem;
+}
+
+.download .banner .showP a {
+    color: #e98024;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 1.33rem;
+}
+
+.download .banner .img-box {
+    width: 4.39rem;
+    height: 7.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.download .banner .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.download .banner .btn-box {
+    font-size: 0;
+    margin-bottom: 0.5rem;
+}
+
+.download .banner .btn-box a {
+    width: 3.16rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    border-radius: 0.1rem;
+    background-color: #1e2835;
+    font-size: 0.28rem;
+    color: #fff;
+    display: inline-block;
+}
+
+.download .banner .btn-box a i {
+    width: 0.39rem;
+    height: 0.49rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.43rem;
+    background: url(../images/download/download_icon.png) 0 -1.53rem;
+    background-size: 10.33rem 2.02rem;
+}
+
+.download .banner .btn-box .android-a {
+    background-color: #2e8836;
+    margin-left: 0.34rem;
+}
+
+.download .banner .btn-box .android-a i {
+    width: 0.42rem;
+    margin-right: 0.25rem;
+    background-position-x: -0.89rem;
+}
+
+.download .banner .btn-box2 i {
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+
+.download .banner .btn-box2 .p-i {
+    width: 0.34rem;
+    height: 0.4rem;
+    margin-right: 0.12rem;
+    background: url(../images/download/download_icon.png) -1.83rem -1.58rem no-repeat;
+    background-size: 10.33rem 2.02rem;
+}
+
+.download .banner .btn-box2 b {
+    font-size: 0.3rem;
+    color: #333;
+}
+
+.download .banner .btn-box2 a {
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    color: #333;
+}
+
+.download .banner .btn-box2 a .btn-down {
+    width: 0.22rem;
+    height: 0.22rem;
+    background: url(../images/download/download_icon.png) -2.79rem -1.67rem no-repeat;
+    background-size: 10.33rem 2.02rem;
+}
+
+.download .box {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.download .box h4 {
+    color: #e98024;
+    font-size: 0.36rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.download .box span {
+    display: block;
+}    
+
+.download .b1 .b1-list {
+    padding-bottom: .8rem;
+}
+
+.download .b1 .b1-list .item {
+    width: 50%;
+    float: left;
+}
+
+.download .b1 .b1-list .item i {
+    width: 0.63rem;
+    height: 0.72rem;
+    display: block;
+    margin: 0.76rem auto 0.43rem;
+    background: url(../images/download/download_icon.png) 0 0 no-repeat;
+    background-size: 10.33rem 2.02rem;
+}
+
+.download .b1 .b1-list b {
+    font-size: 0.3rem;
+    color: #333;
+    display: block;
+    margin-bottom: .28rem;
+}
+
+.download .b1 .b1-list p {
+    display: block;
+    font-size: 0.26rem;
+    color: #666;
+}
+
+.download .b1 .b1-list .item2 i {
+    width: .71rem;
+    background-position-x: -1.89rem;
+}
+
+.download .b1 .b1-list .item3 i {
+    width: .78rem;
+    background-position-x: -3.79rem;
+}
+
+.download .b1 .b1-list .item4 i {
+    width: .72rem;
+    background-position-x: -5.75rem;
+}
+
+.download .b1 .b1-list .item5 i {
+    width: .70rem;
+    background-position-x: -7.69rem;
+}
+
+.download .b1 .b1-list .item6 i {
+    width: .72rem;
+    background-position-x: -9.61rem;
+}
+
+.download .b2 ul.nav-box {
+    width: 7.1rem;
+    margin: 0 auto;
+    font-size: 0;
+    padding-bottom: 0.35rem;
+    border-bottom: 0.02rem solid #eee;
+}
+
+.download .b2 ul.nav-box li {
+    width: 25%;
+    display: inline-block;
+    font-size: 0.3rem;
+    color: #333;
+}
+
+.download .b2 ul.nav-box li.active {
+    color: #2a3052;
+    font-weight: bold;
+}
+
+.download .b2 ul.tab-box li {
+    border-top: 0.1rem solid #fafafa;
+    box-sizing: border-box;
+}
+
+.download .b2 ul.tab-box li a {
+    width: 7.1rem;
+    padding: 0.14rem 0 0.14rem 0.16rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.download .b2 ul.tab-box li a .left-box {
+    text-align: left;
+    float: left;
+    width: 3.73rem;
+}
+
+.download .b2 ul.tab-box li a .left-box span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.download .b2 ul.tab-box li a .left-box .title-span {
+    font-size: 0.3rem;
+    color: #333;
+    line-height: 0.6rem;
+}
+
+.download .b2 ul.tab-box li a .left-box p {
+    font-weight: 500;
+    font-size: 0.26rem;
+    color: #666;
+    line-height: 0.36rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.download .b2 ul.tab-box li a .left-box .date-span {
+    font-size: 0.26rem;
+    color: #b6b5b5;
+    line-height: 1;
+    margin-top: 0.15rem;
+}
+
+.download .b2 ul.tab-box li a .img-box {
+    width: 2.86rem;
+    height: 2.18rem;
+    overflow: hidden;
+    float: right;
+}
+
+.download .b2 ul.tab-box li a .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.download .b2 ul.tab-box li:first-child {
+    border-top: none;
+}
+
+.download .b2 .more-box a {
+    width: 2.8rem;
+    height: 0.66rem;
+    line-height: 0.66rem;
+    display: block;
+    margin: 0.32rem auto 0.46rem;
+    font-size: 0.28rem;
+    color: #999;
+    background-color: #f2f2f2;
+    border-radius: 0.05rem;
+}
+
+.download .b3 {
+    background-color: #f2f2f2;
+    padding-top: 0.7rem;
+}
+
+.download .b3 h4 {
+    margin-bottom: 0.4rem;
+}
+
+.download .b3 span {
+    font-size: 0.26rem;
+    color: #333;
+}
+
+.download .b3 .b3-content {
+    width: 6.28rem;
+    display: block;
+    margin: 0.54rem auto 0;
+}
+
+.download .b3 .b3-content .left-box {
+    float: left;
+}
+
+.download .b3 .b3-content .left-box ul.ul-1 {
+    text-align: left;
+}
+
+.download .b3 .b3-content .left-box ul.ul-1 li {
+    line-height: 0.7rem;
+    font-size: 0.28rem;
+    color: #5e5e5e;
+}
+
+.download .b3 .b3-content .left-box ul.ul-1 li i {
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    margin-right: 0.14rem;
+    margin-top: 0.3rem;
+    background-color: #2e8836;
+    float: left;
+}
+
+.download .b3 .b3-content .left-box ul.ul-2 li {
+    margin-top: 0.26rem;
+}
+
+.download .b3 .b3-content .left-box ul.ul-2 li a {
+    width: 2.2rem;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    border-radius: 0.05rem;
+    background-color: #1e2835;
+    display: block;
+    font-size: 0.2rem;
+    color: #fff;
+}
+
+.download .b3 .b3-content .left-box ul.ul-2 li a i {
+    width: 0.27rem;
+    height: 0.33rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    background: url(../images/index/index_icon.png) -3.35rem -1.69rem no-repeat;
+    background-size: 9.02rem 2.28rem;
+}
+
+.download .b3 .b3-content .left-box ul.ul-2 .li-2 a {
+    background-color: #2e8836;
+}
+
+.download .b3 .b3-content .left-box ul.ul-2 .li-2 a i {
+    width: 0.3rem;
+    height: 0.34rem;
+    margin-right: 0.18rem;
+    background-position-x: -4.87rem;
+}
+
+.download .b3 .b3-content .img-box {
+    width: 3.82rem;
+    height: 4.31rem;
+    overflow: hidden;
+    float: right;
+}
+
+.download .b3 .b3-content .img-box img {
+    width: 100%;
+    height: 100%;
+}

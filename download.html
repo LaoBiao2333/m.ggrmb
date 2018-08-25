@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/download.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        function size() {
+            var width = $(window).width();
+            if (width > 750) {
+                $('html').css('font-size', function () {
+                    return 100;
+                });
+                return;
+            } else {
+                $('html').css('font-size', function () {
+                    return 100 * width / 750;
+                });
+            }
+        }
+        size();
+        $(window).resize(function () {
+            size();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="download content-body">
+        <div class="banner">
+            <span class="title-span"></span>
+            <div class="banner-content showP">
+                <p data-content="MT4是一款国际上最受欢迎的投资看盘交易平台，集行情图表、 技术分析和交易操作三大功能于一身，可进行下单、平仓、限价单、 止损、止赢、查看报表及分析数据等不同操作。功能俱全，方便看盘， 便于了解市场资金流向。客户亦能通过设置止损价和获利价， 不用每分每秒监控市况，亦能确保在第一时间保障最大利润。 目前全球已超过70%的经济公司，选择使用MT4交易软件。 金盛金银（GGPM）MT4平台同时提供MT4桌面版、MT4 IOS版及MT4 adroid版。">
+                    MT4是一款国际上最受欢迎的投资看盘交易平台，集行情图表、 技术分析和交易操作三大功能于一身，可进行下单、平仓、限价单、 止损、止赢、查看报表及分析数据等不同操作。功能俱全，方便看盘， 便于了解市场资金流向。客户亦能通过设置止损价和获利价，
+                    不用每分每秒监控市况，亦能确保在第一时间保障最大利润。 目前全球已超过70%的经济公司，选择使用MT4交易软件。 金盛金银（GGPM）MT4平台同时提供MT4桌面版、MT4 IOS版及MT4 adroid版。
+                    <a href="javascript:;" class="btn-up">收起</a>
+                </p>
+                <a href="javascript:;" class="btn-more">查看更多</a>
+            </div>
+            <div class="img-box">
+                <img src="./images/download/banner_img.png" alt="">
+            </div>
+            <div class="btn-box">
+                <a href="javascript:;" class="iphone-a">
+                    <i></i>iPhone</a>
+                <a href="javascript:;" class="android-a">
+                    <i></i>Android</a>
+            </div>
+            <div class="btn-box2">
+                <i class="p-i"></i>
+                <b>MT4操作指引：</b>
+                <a href="javascript:;">
+                    <i class="btn-down"></i>
+                    iOS苹果
+                </a>
+                <a href="javascript:;">
+                    <i class="btn-down"></i>
+                    Android安卓
+                </a>
+            </div>
+        </div>
+        <div class="box b1">
+            <div class="b1-list clearfix">
+                <div class="item item1">
+                    <i></i>
+                    <div class="txt">
+                        <b>高效执行力</b>
+                        <p>迅捷高效提升盈利频率</p>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <i></i>
+                    <div class="txt">
+                        <b>操作灵活简单</b>
+                        <p>图标显示适合国人使用</p>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <i></i>
+                    <div class="txt">
+                        <b>免费模拟账户</b>
+                        <p>无需入金体验交易环境</p>
+                    </div>
+                </div>
+                <div class="item item4">
+                    <i></i>
+                    <div class="txt">
+                        <b>多重风险控制</b>
+                        <p>四种挂单应对交易时段</p>
+                    </div>
+                </div>
+                <div class="item item5">
+                    <i></i>
+                    <div class="txt">
+                        <b>图表分析绘制</b>
+                        <p>协助您判断走势与行情</p>
+                    </div>
+                </div>
+                <div class="item item6">
+                    <i></i>
+                    <div class="txt">
+                        <b>多平台多语言</b>
+                        <p>21种语言随时随地进行交易</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+        $("#header").load("./common/header.html")
+        $("#footer").load("./common/footer.html")
+
+        $(".banner a.btn-more").click(function () {
+            $(".banner .banner-content").removeClass("showP");
+        })
+        $(".banner a.btn-up").click(function () {
+            $(".banner .banner-content").addClass("showP");
+        })
+    </script>
+
+</body>
+
+</html>

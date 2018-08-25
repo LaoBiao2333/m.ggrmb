@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/product.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        function size() {
+            var width = $(window).width();
+            if (width > 750) {
+                $('html').css('font-size', function () {
+                    return 100;
+                });
+                return;
+            } else {
+                $('html').css('font-size', function () {
+                    return 100 * width / 750;
+                });
+            }
+        }
+        size();
+        $(window).resize(function () {
+            size();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="content-body">
+        <div class="term">
+            <div class="nav-box">
+                <ul>
+                    <li class="nav-li active">买入</li>
+                    <li class="nav-li">卖出</li>
+                    <li class="nav-li">建仓</li>
+                    <li class="nav-li">手数</li>
+                    <li class="nav-li">盎司</li>
+                    <li class="nav-li">合约单位</li>
+                    <li class="nav-li">最小波幅</li>
+                    <li class="nav-li">保证金</li>
+                    <li class="nav-li">强制平仓</li>
+                    <li class="nav-li">点</li>
+                    <li class="nav-li">T+0</li>
+                    <li class="nav-li">点差</li>
+                    <li class="nav-li">挂单</li>
+                    <li class="nav-li">过夜利息</li>
+                    <li class="nav-li">持仓过夜</li>
+                    <li class="nav-li">杠杆比例</li>
+                    <li class="nav-li">止损</li>
+                    <li class="nav-li">止盈</li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <ul>
+                    <li class="tab-li active">
+                        <i></i>
+                        <b class="title-b">买入</b>
+                        <p>也叫买升或做多，表示判断价格上升，买入一定数量的手数。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">卖出</b>
+                        <p>也叫买升或做多，表示判断价格上升，买入一定数量的手数。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">建仓</b>
+                        <p>也叫开仓，指买入或卖出一定数量的手数。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">手数</b>
+                        <p>是指每笔交易中所买卖的伦敦金/银数量。伦敦金1手等于100盎司，伦敦银1手等于2500盎司。即伦敦金0.1手等于10盎司，按比例计算。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">盎司</b>
+                        <p>伦敦金/银交易中的盎司是指金衡盎司， 专用于作为贵金属商品的计量单位。1金衡盎司=31.034768克。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">合约单位</b>
+                        <p>是指交易1手伦敦金/银中所买卖的数量。1手伦敦金的合约单位是100盎司， 1手伦敦银的合约。单位是2500盎司。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">最小波幅</b>
+                        <p>伦敦金每跳动一次至少升或跌1个点，代表每盎司的伦敦金价格升或跌了0.1美元。伦敦银每跳动一次等于升或跌了1个点，代表每盎司的伦敦银价格升或跌了0.01美元。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">保证金</b>
+                        <p>开仓时必须投入的抵押资金，1手伦敦金/伦敦银的保证金是1000美元。 在金盛金银（GGPM）单笔交易的最小手数是0.1手，所以，交易伦敦金/银单笔最低保证金只需100美元。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">强制平仓</b>
+                        <p>当投资者保证金水平达到或低于20%，为防止风险进一步扩大，系统会执行强制平仓。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">点</b>
+                        <p>“1点”是指伦敦金/银价格的0.01美元，即当伦敦金/银价格升或跌了0.05美元/盎司时，相当于升或跌了5点。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">T+0</b>
+                        <p>表示建仓当天就可以平仓，T+1表示建仓后第二天（即一天之后）才可以平仓。T后面的数字表示建仓之后多少天可以平仓。交易平台建仓后可以立即平仓，因此我们属于T+0交易。比如股票不能在买升当天卖出，要等到第二天才可以卖出，属于T+1交易。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">点差</b>
+                        <p>是指交易平台中买入价和卖出价的差额，也就是建仓的交易成本，在建仓时公司会收取点差费用。伦敦金标准点差0.5美元/盎司，伦敦银标准点差0.04美元/盎司。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">挂单</b>
+                        <p>挂单是指设定一个理想的交易价格，当最新市场价到达客户设定的价格时，系统便会自动建仓。挂单的优势在于客户可以在理想的价位建仓，由客户自行选定交易品种、手数和目标成交价位，无需长期留意市况或开启交易平台。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">过夜利息</b>
+                        <p>是指建仓当日并未平仓，持仓到达第二天的订单，就会产生过夜利息。买入建仓和卖出建仓都需要按照当天的收市价、相应的利率和过夜天数交付过夜利息。买入建仓的订单过夜利率是2.25%，卖出建仓的订单过夜利率是0.75%。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">持仓过夜</b>
+                        <p>过夜并不是以凌晨12点来划分的。建仓后持仓至翌日凌晨4:59时，就会产生过夜利息。时间均以系统显示的记录为准。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">杠杆比例</b>
+                        <p>杠杆比例是指实际价值与投入金额之间的比例。杠杆比例=实际价值÷投入金额。假设伦敦金1000美元/盎司，那么1手(对应100盎司)的价值是100,000美元，1手的保证金固定为1,000美元，若满仓操作，此时杠杆比例为：100,000美元/1,000美元=100，表示实际价值为投入金额的100倍，也就是俗称的100倍杠杆。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">止损</b>
+                        <p>止损是指预先为交易单设置平仓价格,当市场价到达设定的止损价时,系统自动对交易单进行平仓，MT4平台中的止损设置用于控制损失。 止损价需要设置在价格的亏损区域。伦敦金/银的止损价需距离当前价格最少300点。</p>
+                    </li>
+                    <li class="tab-li">
+                        <i></i>
+                        <b class="title-b">止盈</b>
+                        <p>止赚（也叫做“获利”），是指预先为交易单设置平仓价格,当市场价到达设定的止赚价时,系统自动对交易单进行平仓，MT4平台中的止赚设置用于锁定盈利，防止因价格变动失去已到达过的盈利。 止赚价需要设置在价格的盈利区域（即买升建仓的止赚价要设在建仓价以上，买跌建仓的止赚价要设在建仓价以下）。伦敦金/银的止赚价需距离当前价格最少300点。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+    <script>
+        $("#header").load("./common/header.html")
+        $("#footer").load("./common/footer.html")
+
+        $(".term .nav-box li").click(function () {
+            $(".term .nav-box li").removeClass("active");
+            $(this).addClass("active");
+            $(".term .tab-content").animate({scrollTop:$(".tab-content li").eq($(this).index()).position().top},300);
+        })
+    </script>
+
+</body>
+
+</html>

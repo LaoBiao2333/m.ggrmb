@@ -1,0 +1,416 @@
+.banner {
+    width: 100%;
+    height: 3.9rem;
+    position: relative;
+    display: table;
+}
+
+.banner .banner-bg {
+    width: 100%;
+    height: 3.9rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner .banner-bg img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .title-span {
+    font-size: .3rem;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.banner .title-span b {
+    font-size: .38rem;
+}
+
+/* Introduce */
+.introduce .box-content {
+    background-color: #f5f7f9;
+    padding: .7rem 0;
+}
+
+.introduce .box-content .box {
+    width: 7.08rem;
+    border-radius: .1rem;
+    border: 0.01rem solid #2e8836;
+    display: block;
+    margin: 0 auto 0.72rem;
+    position: relative;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 .2rem #b7b7b7; 
+    -moz-box-shadow: 0 0 .2rem #b7b7b7; 
+    box-shadow: 0 0 .2rem #b7b7b7;
+}
+
+.introduce .box-content .box i {
+    width: .65rem;
+    height: .94rem;
+    display: inline-block;
+    background: url(../images/product/product_icon.png) 0 0 no-repeat;
+    background-size: 4.1rem .94rem;
+    position: absolute;
+    top: 0;
+    left: .45rem;
+}
+
+.introduce .box-content .box b {
+    line-height: 1.2rem;
+    width: 6.5rem;
+    display: block;
+    margin: 0 auto;
+    font-size: .36rem;
+    color: #2e8836;
+    border-bottom: 0.01rem solid #2e8836;
+    text-indent: 1.32rem;
+    position: relative;
+}
+
+.introduce .box-content .box b i {
+    width: .47rem;
+    height: .42rem;
+    background-position: -3.63rem -.26rem;
+    position: absolute;
+    top: .38rem;
+    right: .3rem;
+    left: unset;
+}
+
+.introduce .box-content .box p {
+    width: 6.5rem;
+    margin: .4rem auto .34rem;
+    font-size: .3rem;
+    line-height: .7rem;
+    color: #666;
+    text-align: justify;
+    /* position: relative; */
+}
+
+.introduce .box-content .box p a {
+    color: #e98024;
+    /* position: absolute; */
+    float: right;
+    display: inline-block;
+}
+
+.introduce .box-content .box a {
+    display: none;
+}
+
+.introduce .box-content .box.showP {
+    position: relative;
+    height: 6.6rem;
+}
+
+.introduce .box-content .box.showP p {
+    height: 0;
+    overflow: hidden;
+}
+
+.introduce .box-content .box.showP p a {
+    display: none;
+}
+
+.introduce .box-content .box.showP p:before {
+    content: attr(data-content);
+    width: 6.5rem;
+    height: 4.2rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    position: absolute;
+    left: .29rem;
+    top: 1.51rem;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.introduce .box-content .box.showP p:after {
+    width: 6.5rem;
+    content: attr(data-content);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-line-clamp: 7;
+    padding-right: 1.3rem;
+    position: absolute;
+    left: 0.29rem;
+    top: 1.51rem;
+    text-indent: -7.6rem;
+}
+
+.introduce .box-content .box.showP a {
+    color: #e98024;
+    display: inline-block;
+    position: absolute;
+    right: 0.29rem;
+    top: 5.9rem;
+}
+
+.introduce .box-content .box.b2 {
+    border-color: #e98024;
+}
+
+.introduce .box-content .box.b2 .i1 {
+    background-position-x: -.89rem;
+}
+
+.introduce .box-content .box.b2 b {
+    color: #e98024;
+    border-bottom-color: #e98024;
+}
+
+.introduce .box-content .b3 {
+    width: 7.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-top: .4rem;
+}
+
+.introduce .box-content .b3 ul {
+    width: 6.42rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.introduce .box-content .b3 ul li {
+    padding: .33rem 0 .3rem .3rem;
+    border-top: 0.02rem dashed #e0e0e0;
+    position: relative;
+}
+
+.introduce .box-content .b3 ul li:first-child {
+    border-top: none;
+}
+
+.introduce .box-content .b3 ul li b {
+    width: 5.16rem;
+    font-size: .3rem;
+    color: #333;
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.introduce .box-content .b3 ul li b i {
+    width: .09rem;
+    height: .09rem;
+    float: left;
+    margin: .1rem .15rem 0 0;
+    background-color: #2e8836;
+    border-radius: 50%;
+}
+
+.introduce .box-content .b3 ul li p {
+    width: 5.16rem;
+    line-height: .5rem;
+    color: #666;
+    font-size: .28rem;
+    font-weight: bold;
+}
+
+.rule .box-content .b2 ul li.closeLi p,
+.introduce .box-content .b3 ul li.closeLi p {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.rule .box-content .b2 ul li .btn-i,
+.introduce .box-content .b3 ul li .btn-i {
+    width: .63rem;
+    height: .62rem;
+    display: inline-block;
+    background: url(../images/product/product_icon.png) -2.67rem -.16rem no-repeat;
+    background-size: 4.1rem .94rem;
+    position: absolute;
+    top: .96rem;
+    right: 0;
+}
+
+.rule .box-content .b2 ul li.closeLi .btn-i,
+.introduce .box-content .b3 ul li.closeLi .btn-i {
+    background-position-x: -1.79rem;
+}
+
+/* Rule */
+.rule .box-content .b1-table {
+    width: 7.16rem;
+    border-radius: .1rem;
+    margin: .16rem auto 0.35rem;
+    overflow: hidden;
+    border: 0.01rem solid #b1b1b1;
+}
+.rule .box-content table {
+    width: 7.16rem;
+    /* border: 0.01rem solid #b1b1b1; */
+    background-color: #f9f9f9;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.rule .box-content table tr td {
+    font-size: .28rem;
+    color: #666;
+    line-height: .56rem;
+}
+
+.rule .box-content table tr:first-child {
+    background-color: #0e2752;
+}
+
+.rule .box-content table tr:first-child td {
+    color: #fff;
+}
+
+.rule .box-content table tr:first-child td:not(:first-child) {
+    border-left: 0.01rem solid #b1b1b1;
+}
+
+.rule .box-content table tr {
+    height: .82rem;
+}
+
+.rule .box-content table tr:not(:first-child) td {
+    width: 33.3%;
+    border: 0.01rem solid #b1b1b1;
+}
+
+.rule .box-content table tr td:first-child {
+    border-left: none;
+}
+
+.rule .box-content table tr td p {
+    line-height: .56rem;
+    text-align: justify;
+    margin: .4rem .37rem .36rem .27rem;
+}
+
+.rule .box-content .b2 {
+    width: 6.28rem;
+    display: block;
+    margin: 0 auto .4rem;
+}
+
+.rule .box-content .b2 b {
+    color: #333;
+    font-size: .3rem;
+}
+
+.rule .box-content .b2 ul li {
+    border-top: 0.02rem dashed #e0e0e0;
+    position: relative;
+    padding: .16rem 0 .16rem .26rem;
+}
+
+.rule .box-content .b2 ul li:first-child {
+    border-top: none;
+}
+
+.rule .box-content .b2 ul li .i1 {
+    width: .09rem;
+    height: .09rem;
+    float: left;
+    margin-top: .12rem;
+    background-color: #2e8836;
+    border-radius: 50%;
+}
+
+.rule .box-content .b2 ul li p {
+    font-size: 0.26rem;
+    color: #666;
+    line-height: .46rem;
+    padding-left: .34rem;
+    width: 4.67rem;
+    text-align: justify;
+}
+
+.rule .box-content .b2 ul li .btn-i {
+    top: .26rem;
+}
+
+/* Term */
+.term {
+    /* width: 7.28rem; */
+    display: block;
+    margin: 0 auto;
+    padding: .18rem 0;
+}
+
+.term .nav-box ul {
+    margin-left: .18rem;
+    font-size: 0;
+    text-align: justify;
+}
+
+.term .nav-box ul li {
+    font-size: .3rem;
+    color: #999;
+    height: .74rem;
+    line-height: .74rem;
+    padding: 0 .24rem;
+    border-radius: .1rem;
+    display: inline-block;
+    margin: 0 .18rem .18rem 0;
+    border: 0.02rem solid #b1b1b1;
+}
+
+.term .nav-box ul li.active {
+    border-color: #e98024;
+    background-color: #e98024;
+    color: #fff;
+}
+
+.term .tab-content {
+    width: 7.28rem;
+    height: 12.7rem;
+    display: block;
+    margin: .22rem auto 0;
+    position: relative;
+    overflow: scroll;
+}
+
+.term .tab-content ul {
+    position: absolute;
+}
+
+.term .tab-content ul li {
+    border: 0.01rem solid #b1b1b1;
+    background-color: #f9f9f9;
+    border-radius: .1rem;
+    box-sizing: border-box;
+    padding: .31rem .34rem .38rem .38rem;
+    margin-bottom: .44rem;
+}
+
+.term .tab-content ul li i {
+    width: .05rem;
+    height: .36rem;
+    margin-right: .18rem;
+    float: left;
+    background-color: #2e8836;
+}
+
+.term .tab-content ul li b {
+    margin-bottom: .15rem;
+    display: block;
+    font-size: .36rem;
+    color: #838383;
+}
+
+.term .tab-content ul li p {
+    font-size: .3rem;
+    color: #666;
+    line-height: .54rem;
+}

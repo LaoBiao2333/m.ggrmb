@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="./js/swiper.min"></script>
+    <script type="text/javascript">
+        function size() {
+            var width = $(window).width();
+            if (width > 750) {
+                $('html').css('font-size', function () {
+                    return 100;
+                });
+                return;
+            } else {
+                $('html').css('font-size', function () {
+                    return 100 * width / 750;
+                });
+            }
+        }
+        size();
+        $(window).resize(function () {
+            size();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="invest content-body">
+        <div class="banner">
+            <div class="banner-bg">
+                <img src="./images/about/banner.jpg" alt="">
+            </div>
+            <span class="title-span">
+                <b>关于金盛</b>（投资保障）</span>
+        </div>
+        <div class="box-content">
+            <div class="b1">
+                <ul>
+                    <li class="closeLi li-1">
+                        <span class="span-i">
+                            <i></i>
+                        </span>
+                        <b class="title-b">专业投资服务</b>
+                        <p>金盛金银（GGPM）聘请业界资深分析师组成分析团队，为投资者剖析各项财经新闻和相关数据， 并采取在线直播形式为投资者实时把脉行情波动， 把握投资机遇。另外客服中心为投资者提供24小时在线咨询。</p>
+                        <i class="btn-i"></i>
+                    </li>
+                    <li class="closeLi li-2">
+                        <span class="span-i">
+                            <i></i>
+                        </span>
+                        <b class="title-b">安全交易</b>
+                        <p>金盛金银（GGPM）保障客户放心安全在互联网进行各项交易， 采用国际领先网络编码技术，再配合其他专为网上交易而设的保护措施 ，用于对抗各类型网络攻击及黑客行为，防止未经授权的登入和交易。</p>
+                        <i class="btn-i"></i>
+                    </li>
+                    <li class="closeLi li-3">
+                        <span class="span-i">
+                            <i></i>
+                        </span>
+                        <b class="title-b">资金安全便捷</b>
+                        <p>金盛金银（GGPM）客户资金与公司运营资金分存于不同银行账户，保证客户资金独立托管。金盛金银（GGPM） 提供多种支付方式，存款即时到账，提现2小时内处理，确保投资者资金安全性与流动性。</p>
+                        <i class="btn-i"></i>
+                    </li>
+                    <li class="closeLi li-4">
+                        <span class="span-i">
+                            <i></i>
+                        </span>
+                        <b class="title-b">隐私安全保护</b>
+                        <p>金盛金银（GGPM）采用最新SSL编程密码技术保护客户资料传输免拦截与盗取， 采取银行级别安全保护措施确保投资环境安全。公司严格遵守纽西兰相关隐私保护法律法规， 制定了严谨的客户信息保护流程和保密机制，确保客户隐私信息不被泄露。</p>
+                        <i class="btn-i"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="b2">
+                <b>合作伙伴</b>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_1" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_2" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_3" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_4" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_5" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_6" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_7" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_8" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_9" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_10" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_11" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/about/clogo_12" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+        $("#header").load("./common/header.html")
+        $("#footer").load("./common/footer.html")
+
+        $(".b1 ul li .btn-i").click(function () {
+            if ($(this).parent().hasClass("closeLi")) {
+                $(this).parent().removeClass("closeLi");
+            } else {
+                $(this).parent().addClass("closeLi");
+            }
+        })
+
+        $(function () {
+            var b2swiper = new Swiper('.b2 .swiper-container', {
+                pagination: '.swiper-pagination',
+                slidesPerView: 3.8,
+                loop: true,
+                spaceBetween: 0,
+                slidesPerGroup: 3,
+            });
+        })
+    </script>
+
+</body>
+
+</html>

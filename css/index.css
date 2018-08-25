@@ -1,0 +1,321 @@
+.index {
+    line-height: 1;
+    text-align: center;
+}
+
+.index .banner {
+    padding: 1.7rem 0 1.2rem;
+    background: url(../images/index/banner_img.png) no-repeat center;
+    background-size: contain;
+}
+
+.index .banner h2 {
+    font-size: 0.66rem;
+    color: #2a3052;
+    margin-bottom: 0.92rem;
+}
+
+.index .banner p {
+    font-size: 0.32rem;
+    color: #333;
+    margin-bottom: 1.28rem;
+}
+
+.index .banner .btn-box {
+    font-size: 0;
+}
+
+.index .banner .btn-box a {
+    width: 3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 0.05rem;
+    background-color: #2a3052;
+    font-size: 0.3rem;
+    color: #fff;
+    display: inline-block;
+}
+
+.index .banner .btn-box .account-a {
+    background-color: #e98024;
+    margin-left: 0.48rem;
+}
+
+.index .box {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.index .box h4 {
+    color: #e98024;
+    font-size: 0.36rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.index .box span {
+    display: block;
+}
+
+.index .b1 {
+    width: 7.1rem;
+    margin: 0 auto 0.35rem;
+}
+
+.index .b1 .b1-swiper {
+    width: 100%;
+}
+
+.index .b1 .b1-swiper i {
+    width: 0.82rem;
+    height: 0.82rem;
+    display: block;
+    margin: 0.15rem auto 0.7rem;
+    background: url(../images/index/index_icon.png) 0 0 no-repeat;
+    background-size: 9.02rem 2.28rem;
+}
+
+.index .b1 .b1-swiper b {
+    font-size: 0.36rem;
+    color: #333;
+    display: block;
+}
+
+.index .b1 .b1-swiper span {
+    display: block;
+    line-height: 0.52rem;
+    font-size: 0.28rem;
+    color: #333;
+}
+
+.index .b1 .b1-swiper .swiper-container {
+    padding-bottom: 1rem;
+}
+
+.index .b1 .b1-swiper .swiper-container .slider {
+    width: 4.76rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.index .b1 .b1-swiper .swiper-container .swiper-button {
+    width: 0.86rem;
+    height: 0.86rem;
+    background: url(../images/index/index_icon.png) 0 -1.42rem no-repeat;
+    background-size: 9.02rem 2.28rem;
+}
+
+.index .b1 .b1-swiper .swiper-container .swiper-button-next {
+    background-position-x: -1.53rem;
+}
+
+.index .b1 .b1-swiper .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 0.4rem;
+    height: 0.04rem;
+    border-radius: 0;
+    background-color: #d1d1d1;
+    opacity: 1;
+    display: inline-block;
+}
+
+.index .b1 .b1-swiper .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+    background: #2a3052;
+}
+
+.index .b2 ul.nav-box {
+    width: 7.1rem;
+    margin: 0 auto;
+    font-size: 0;
+    padding-bottom: 0.35rem;
+    border-bottom: 0.02rem solid #eee;
+}
+
+.index .b2 ul.nav-box li {
+    width: 25%;
+    display: inline-block;
+    font-size: 0.3rem;
+    color: #333;
+}
+
+.index .b2 ul.nav-box li.active {
+    color: #2a3052;
+    font-weight: bold;
+}
+
+.index .b2 .nav-tab-c .tab-box {
+    display: none;
+}
+
+.index .b2 .nav-tab-c .tab-box.active {
+    display: block;
+}
+
+.index .b2 ul.tab-box li {
+    border-top: 0.1rem solid #fafafa;
+    box-sizing: border-box;
+}
+
+.index .b2 ul.tab-box li a {
+    width: 7.1rem;
+    padding: 0.14rem 0 0.14rem 0.16rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.index .b2 ul.tab-box li a .left-box {
+    text-align: left;
+    float: left;
+    width: 3.73rem;
+}
+
+.index .b2 ul.tab-box li a .left-box span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index .b2 ul.tab-box li a .left-box .title-span {
+    font-size: 0.3rem;
+    color: #333;
+    line-height: 0.6rem;
+}
+
+.index .b2 ul.tab-box li a .left-box p {
+    font-weight: 500;
+    font-size: 0.26rem;
+    color: #666;
+    line-height: 0.36rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.index .b2 ul.tab-box li a .left-box .date-span {
+    font-size: 0.26rem;
+    color: #b6b5b5;
+    line-height: 1;
+    margin-top: 0.15rem;
+}
+
+.index .b2 ul.tab-box li a .img-box {
+    width: 2.86rem;
+    height: 2.18rem;
+    overflow: hidden;
+    float: right;
+}
+
+.index .b2 ul.tab-box li a .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.index .b2 ul.tab-box li:first-child {
+    border-top: none;
+}
+
+.index .b2 .more-box a {
+    width: 2.8rem;
+    height: 0.66rem;
+    line-height: 0.66rem;
+    display: block;
+    margin: 0.32rem auto 0.46rem;
+    font-size: 0.28rem;
+    color: #999;
+    background-color: #f2f2f2;
+    border-radius: 0.05rem;
+}
+
+.index .b3 {
+    background-color: #f2f2f2;
+    padding-top: 0.7rem;
+}
+
+.index .b3 h4 {
+    margin-bottom: 0.4rem;
+}
+
+.index .b3 span {
+    font-size: 0.26rem;
+    color: #333;
+}
+
+.index .b3 .b3-content {
+    width: 6.28rem;
+    display: block;
+    margin: 0.54rem auto 0;
+}
+
+.index .b3 .b3-content .left-box {
+    float: left;
+}
+
+.index .b3 .b3-content .left-box ul.ul-1 {
+    text-align: left;
+}
+
+.index .b3 .b3-content .left-box ul.ul-1 li {
+    line-height: 0.7rem;
+    font-size: 0.28rem;
+    color: #5e5e5e;
+}
+
+.index .b3 .b3-content .left-box ul.ul-1 li i {
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    margin-right: 0.14rem;
+    margin-top: 0.3rem;
+    background-color: #2e8836;
+    float: left;
+}
+
+.index .b3 .b3-content .left-box ul.ul-2 li {
+    margin-top: 0.26rem;
+}
+
+.index .b3 .b3-content .left-box ul.ul-2 li a {
+    width: 2.2rem;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    border-radius: 0.05rem;
+    background-color: #1e2835;
+    display: block;
+    font-size: 0.2rem;
+    color: #fff;
+}
+
+.index .b3 .b3-content .left-box ul.ul-2 li a i {
+    width: 0.27rem;
+    height: 0.33rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    background: url(../images/index/index_icon.png) -3.35rem -1.69rem no-repeat;
+    background-size: 9.02rem 2.28rem;
+}
+
+.index .b3 .b3-content .left-box ul.ul-2 .li-2 a {
+    background-color: #2e8836;
+}
+
+.index .b3 .b3-content .left-box ul.ul-2 .li-2 a i {
+    width: 0.3rem;
+    height: 0.34rem;
+    margin-right: 0.18rem;
+    background-position-x: -4.87rem;
+}
+
+.index .b3 .b3-content .img-box {
+    width: 3.82rem;
+    height: 4.31rem;
+    overflow: hidden;
+    float: right;
+}
+
+.index .b3 .b3-content .img-box img {
+    width: 100%;
+    height: 100%;
+}
