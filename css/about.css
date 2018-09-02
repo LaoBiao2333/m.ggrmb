@@ -389,6 +389,10 @@
     border-top: none;
 }
 
+.notice ul.notice-list li a {
+    display: block;
+}
+
 .notice ul.notice-list li a i {
     width: .09rem;
     height: .09rem;
